@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="workshop.scarnes.dice.scarnes_dice.MainActivity">
+
+    <TextView
+        android:id="@+id/user_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Score"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/computer_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/user_score"
+        android:layout_alignLeft="@+id/user_score"
+        android:layout_alignRight="@+id/user_score"
+        android:layout_alignStart="@+id/user_score"
+        android:layout_alignTop="@+id/user_score"
+        android:layout_marginTop="30dp"
+        android:text="Computer score" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/computer_score"
+        android:layout_alignLeft="@+id/computer_score"
+        android:layout_alignRight="@+id/computer_score"
+        android:layout_alignStart="@+id/computer_score"
+        android:layout_alignTop="@+id/computer_score"
+        android:layout_marginTop="30dp"
+        android:text="Message" />
+
+    <ImageView
+        android:id="@+id/dice"
+        android:layout_below="@id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dice1"
+        android:layout_margin="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/roll"
+        android:text="ROLL"
+        android:layout_below="@id/dice"
+        android:layout_toLeftOf="@id/hold"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hold"
+        android:text="HOLD"
+        android:layout_below="@id/dice"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset"
+        android:text="RESET"
+        android:layout_below="@id/dice"
+        android:layout_toRightOf="@id/hold"
+        android:layout_margin="15dp"/>
+
+</RelativeLayout>
